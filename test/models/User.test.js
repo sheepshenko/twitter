@@ -7,5 +7,10 @@ describe("Prueba de jest ", () => {
         expect(user.username).toBe("sheepshenko")
     })
 
+    test("Requerimiento 2: Fecha en atributos de User", () => {
+        const user = new User(1, "sheepshenko", "Fernando", "Bio")
+        expect(user.lastUpdated).not.toBeUndefined()
+    })
+
 
 })
