@@ -21,6 +21,9 @@ describe("Prueba de jest ", () => {
     test("Requerimiento 4: Usando setters", () => {
         const user = new User(1, "sheepshenko", "Fernando", "Bio")
         user.setUsername = "sheepo"
+        user.setBio = "Born in CDMX"
         expect(user.username).toBe("sheepo")
+        expect(user.bio).toBe("Born in CDMX")
     })
+
 })
