@@ -9,6 +9,10 @@ class UserService{
     static getInfo(user){
         return Object.values(user)
     }
+
+    static updateUsername(user, newusername){
+        user.setUsername = newusername
+    }
 }
 
 
